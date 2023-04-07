@@ -98,4 +98,13 @@
         <p style="color: black; font-style: italic;">To know your learning style : <a href="{{ url_for('ils') }}">Click here!!!</a>.</p>
       </div>
     </body>
+  <script type="text/javascript">
+    function store(prediction_text)
+    {
+      console.log(prediction_text)
+      localStorage.setItem("pred",prediction_text)
+    }
+    store("{{ prediction_text }}")
+    console.log(localStorage.getItem("pred"))
+  </script>  
 </html>

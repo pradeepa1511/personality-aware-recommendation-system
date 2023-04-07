@@ -31,9 +31,25 @@
           margin-left: 10px ;
           text-align: left;
         }
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 100%;
+      }
+      div.polaroid {
+        width: 90%;
+        margin-right: auto ;
+        margin-left: auto; 
+      }
      
     </style>
-    
+    <body>
+
+    <div class="chart">
+      
+    </div>
      <div class="card">
     <!-- <h1>RECOMMENDATION</h1> -->
     {% for item in final_lis %}
@@ -680,5 +696,32 @@
         
   
 
-{% endblock %}
 </div>
+</p>
+</ul>
+</div>
+<script type="text/javascript">
+  function SET() {
+    var pred = localStorage.getItem("pred");
+    var div = document.getElementsByClassName('chart')[0];
+    console.log("funllll")
+    if (pred === "Extroversion") {
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c0.png")}}"/></div>';
+    } else if (pred === "Neuroticism") {
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c1.png")}}"/></div>';
+    } else if (pred === "Agreeableness") { 
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c2.png")}}"/></div>';
+      
+      console.log("helloooo")
+    } else if (pred === "Conscientiousness") {
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c3.png")}}"/></div>';
+    } else {
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c4.png")}}"/></div>';
+    }
+  }
+  
+  SET();
+</script>
+
+</body>
+{% endblock %}
