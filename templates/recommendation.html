@@ -1,0 +1,684 @@
+{% extends "base1.html" %}
+
+{% block content %}
+<style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+        background: #ecf0f4;
+      }
+        h1 {
+          text-align: center;
+        }
+        h2{
+          color : #00bcd9;
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+        }
+        h3 {
+          color: #00bcd9;
+          font-family: 'Roboto', sans-serif;
+          
+        }
+        h4{
+          color : #404F5E;
+          font-family: 'Roboto', sans-serif;
+        }
+        p {
+          color: #404F5E;
+          font-family: 'Roboto', sans-serif;
+          font-size:18px;
+          margin-left: 10px ;
+          text-align: left;
+        }
+     
+    </style>
+    
+     <div class="card">
+    <!-- <h1>RECOMMENDATION</h1> -->
+    {% for item in final_lis %}
+
+    {% if item =="active" and item=="sensing" and item=="visual" and item=="sequential"%}
+    <h4>Active, Sensing, Visual, Sequential</h4>
+    <ul>
+      <p>
+        • Emphasize practical problem-solving strategies such as laboratory strategy and project (Active). <br>
+        • Provide hands-on activities (Active). <br>
+        • Use computer assisted instruction (Active).<br>
+        • Discovery through group learning, brainstorming and case study (Active).<br> 
+        • Seek practical exercises that involve drilling and the development of psychomotor skills (Active). <br>
+        • Allow students to interact with each other and allow them to cooperate on homework assignments. (Active). <br>
+        • Use guided discovery, demonstration & conventional (expository) strategies for teaching (A\R).<br>
+      </p>
+      <p>
+        • Use computer assisted instruction (Sensing).<br>
+        • Provide practical exercises that involve drilling and the development of psychomotor skills (Sensing).<br> 
+        • Show films through video tape or projector during instruction (Sensing). <br>
+        • Use different demonstrations activities for illustrations (Sensing). <br>
+        • Use simple sketches, graphs, diagrams and pictures before, during and after the presentation of verbal materials (Sensing). <br>
+        • Use practical applications of the concept taught and its relevance to real life situations (Sensing). <br>
+        • Provide concrete examples during illustrations such as facts, reality or hypothetical experiments and their results and follow the scientific procedure in presenting theoretical materials (Sensing). <br>
+        • Provide explicit illustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
+        • Emphasize practical problem-solving strategies such as guided discovery and inquiry (Sensing). <br>
+      </p>
+      <p>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+        • Use video tape for instruction (Visual). <br>
+        • Use computer assisted instruction (Visual). <br>
+        • Use concept maps for illustration (Visual). <br>
+        • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual).<br>
+      </p>
+      <p>
+        • Develop theories and formulate hypotheses (Sequential). 
+        • Follow laid down principles and scientific procedures in presenting theoretical materials (Sequential). 
+        • Show how the theory or hypothesis can be validated, deduce its consequences and present applications (Sequential). 
+        • Use demonstration strategy for teaching (Sequential/Global). 
+        • Provide practical exercises that involve drilling in a logical and sequential order (Sequential).  
+      </p>
+    </ul>
+
+    {% elif item =="reflective" and item=="intuitive" and item=="verbal" and item=="global"%}
+    <h4>Reflective, Intuitive, Verbal, Global</h4>
+    <ul>
+      <p>
+        • Provide materials that emphasize fundamental understanding (Reflective). <br>
+        • Provide intervals of time for students to think about what they have been taught before starting teaching another concept (Reflective). <br>
+        • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective). <br>
+        • Provide little practical exercises that involve drilling and the development of the three educational domains (Reflective). <br>
+        • Use guided discovery, demonstration and conventional (expository) strategies for teaching (Active/Reflective).<br>
+      </p>
+      <p>
+        • Provide a balance of abstract concepts such as theories, mathematical models and principles with concrete concepts such as facts, reality and data with their results (Intuitive). <br>
+        • Provide materials that emphasize fundamental understanding (Intuitive). <br>
+        • Develop theories and formulate hypotheses (Intuitive). <br>
+        • Provide some open-ended questions and exercises that call for analysis and synthesis (Intuitive).<br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Intuitive).<br>
+      </p>
+      <p>
+        • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+        • Use questions to introduce topics followings students’ answers (Verbal). <br>
+        • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal). <br>
+        • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
+        • List all relevant information about assignments, work requirements, objectives and direction on paper or have the students copy from the board (Verbal). <br>
+        • Use a teacher-organized learning situation (Verbal). <br>
+        • Motivate learning through grades and competition (Verbal). <br>
+        • Provide a balance of abstract concepts and concrete information (Verbal).<br>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+      </p>
+      <p>
+        • Use demonstration strategy for teaching (Sequential/Global). <br>
+        • Teach from general to specific (Global). <br>
+        • Students should be exposed periodically to advanced concepts before these concepts would normally be introduced (Global). <br>
+        • Assign creativity exercises that involve generating alternative solutions and bringing in materials from other courses or disciplines (Global). <br> 
+        • Give students the freedom to devise their own ways of solving problems (Global). <br>
+        • Relate the material to be taught with previous knowledge of the students and their personal experiences (Global). <br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Global).<br>
+      </p>
+    </ul>
+  
+    {% elif item =="active" and item=="sensing" and item=="visual" %}
+    <h4>Active, Sensing, Visual</h4>
+    <ul>
+      <p>
+        <p>• Emphasize practical problem-solving strategies such as laboratory strategy and project (Active).<br>
+        • Provide hands-on activities (Active).<br>
+        • Use computer assisted instruction (Active).<br>
+        • Discovery through group learning, brainstorming and case study (Active).<br> 
+        • Seek practical exercises that involve drilling and the development of psychomotor skills (Active).<br> 
+        • Allow students to interact with each other and allow them to cooperate on homework assignments. (Active). <br>
+        • Use guided discovery, demonstration & conventional (expository) strategies for teaching (A\R).<br>
+      </p>
+      <p>
+        • Use computer assisted instruction (Sensing).<br>
+        • Provide practical exercises that involve drilling and the development of psychomotor skills (Sensing).<br> 
+        • Show films through video tape or projector during instruction (Sensing). <br>
+        • Use different demonstrations activities for illustrations (Sensing). <br>
+        • Use simple sketches, graphs, diagrams and pictures before, during and after the presentation of verbal materials (Sensing). <br>
+        • Use practical applications of the concept taught and its relevance to real life situations (Sensing).<br> 
+        • Provide concrete examples during illustrations such as facts, reality or hypothetical experiments and their results and follow the scientific procedure in presenting theoretical materials (Sensing). <br>
+        • Provide explicit illustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
+        • Emphasize practical problem-solving strategies such as guided discovery and inquiry (Sensing). <br>
+      </p>
+      <p>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+        • Use video tape for instruction (Visual). <br>
+        • Use computer assisted instruction (Visual). <br>
+        • Use concept maps for illustration (Visual). <br>
+        • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual).<br>
+      </p>
+    </ul>
+
+    {% elif item =="active" and item=="visual" and item=="sequential" %}
+    <h4>Active, Visual, Sequential</h4>
+    <ul>
+      <p>
+        • Emphasize practical problem-solving strategies such as laboratory strategy and project (Active). <br>
+        • Provide hands-on activities (Active). <br>
+        • Use computer assisted instruction (Active).<br>
+        • Discovery through group learning, brainstorming and case study (Active). <br>
+        • Seek practical exercises that involve drilling and the development of psychomotor skills (Active). <br>
+        • Allow students to interact with each other and allow them to cooperate on homework assignments.(Active). <br>
+        • Use guided discovery, demonstration & conventional (expository) strategies for teaching (A\R).<br>
+      </p>
+      <p>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+        • Use video tape for instruction (Visual). <br>
+        • Use computer assisted instruction (Visual). <br>
+        • Use concept maps for illustration (Visual). <br>
+        • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual).<br>
+      </p>
+      <p>
+        • Develop theories and formulate hypotheses (Sequential). <br>
+        • Follow laid down principles and scientific procedures in presenting theoretical materials (Sequential). <br>
+        • Show how the theory or hypothesis can be validated, deduce its consequences and present applications (Sequential). <br>
+        • Use demonstration strategy for teaching (Sequential/Global). <br>
+        • Provide practical exercises that involve drilling in a logical and sequential order (Sequential).  <br>
+      </p>
+    </ul>
+
+    {% elif item=="sensing" and item=="visual" and item=="sequential"%}
+    <h4>Sensing, Visual, Sequential</h4>
+    <ul>
+      <p>
+        • Use computer assisted instruction (Sensing).<br>
+        • Provide practical exercises that involve drilling and the development of psychomotor skills (Sensing).<br> 
+        • Show films through video tape or projector during instruction (Sensing). <br>
+        • Use different demonstrations activities for illustrations (Sensing). <br>
+        • Use simple sketches, graphs, diagrams and pictures before, during and after the presentation of verbal materials (Sensing). <br>
+        • Use practical applications of the concept taught and its relevance to real life situations (Sensing). <br>
+        • Provide concrete examples during illustrations such as facts, reality or hypothetical experiments and their results and follow the scientific procedure in presenting theoretical materials (Sensing). <br>
+        • Provide explicit illustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
+        • Emphasize practical problem-solving strategies such as guided discovery and inquiry (Sensing).<br> 
+      </p>
+      <p>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+        • Use video tape for instruction (Visual). <br>
+        • Use computer assisted instruction (Visual). <br>
+        • Use concept maps for illustration (Visual). <br>
+        • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual).<br>
+      </p>
+      <p>
+        • Develop theories and formulate hypotheses (Sequential). <br>
+        • Follow laid down principles and scientific procedures in presenting theoretical materials (Sequential).<br> 
+        • Show how the theory or hypothesis can be validated, deduce its consequences and present applications (Sequential). <br>
+        • Use demonstration strategy for teaching (Sequential/Global).<br> 
+        • Provide practical exercises that involve drilling in a logical and sequential order (Sequential).  <br>
+      </p>
+    </ul>
+
+    {% elif item =="reflective" and item=="intuitive" and item=="verbal" %}
+    <h4>Reflective, Intuitive, Verbal</h4>
+    <ul>
+      <p>
+        • Provide materials that emphasize fundamental understanding (Reflective). <br>
+        • Provide intervals of time for students to think about what they have been taught before starting teaching another concept (Reflective). <br>
+        • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective). <br>
+        • Provide little practical exercises that involve drilling and the development of the three educational domains (Reflective). <br>
+        • Use guided discovery, demonstration and conventional (expository) strategies for teaching (Active/Reflective).<br>
+      </p>
+      <p>
+        • Provide a balance of abstract concepts such as theories, mathematical models and principles with concrete concepts such as facts, reality and data with their results (Intuitive). <br>
+        • Provide materials that emphasize fundamental understanding (Intuitive). <br>
+        • Develop theories and formulate hypotheses (Intuitive). <br>
+        • Provide some open-ended questions and exercises that call for analysis and synthesis (Intuitive).<br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Intuitive).<br>
+      </p>
+      <p>
+        • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+        • Use questions to introduce topics followings students’ answers (Verbal). <br>
+        • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal).<br> 
+        • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
+        • List all relevant information about assignments, work requirements, objectives and direction on paper or have the students copy from the board (Verbal). <br>
+        • Use a teacher-organized learning situation (Verbal). <br>
+        • Motivate learning through grades and competition (Verbal). <br>
+        • Provide a balance of abstract concepts and concrete information (Verbal).<br>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+      </p>
+    </ul>
+
+    {% elif item =="reflective" and item=="verbal" and item=="global"%}
+    <h4>Reflective, Verbal, Global</h4>
+    <ul>
+      <p>
+        • Provide materials that emphasize fundamental understanding (Reflective). <br>
+        • Provide intervals of time for students to think about what they have been taught before starting teaching another concept (Reflective). <br>
+        • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective). <br> 
+        • Provide little practical exercises that involve drilling and the development of the three educational domains (Reflective). <br>
+        • Use guided discovery, demonstration and conventional (expository) strategies for teaching (Active/Reflective).<br>
+      </p>
+      <p>
+        • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+        • Use questions to introduce topics followings students’ answers (Verbal). <br>
+        • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal). <br>
+        • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
+        • List all relevant information about assignments, work requirements, objectives and direction on paper or have the students copy from the board (Verbal). <br>
+        • Use a teacher-organized learning situation (Verbal). <br>
+        • Motivate learning through grades and competition (Verbal). <br>
+        • Provide a balance of abstract concepts and concrete information (Verbal).<br>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+      </p>
+      <p>
+        • Use demonstration strategy for teaching (Sequential/Global). <br>
+        • Teach from general to specific (Global). <br>
+        • Students should be exposed periodically to advanced concepts before these concepts would normally be introduced (Global). <br>
+        • Assign creativity exercises that involve generating alternative solutions and bringing in materials from other courses or disciplines (Global). <br>
+        • Give students the freedom to devise their own ways of solving problems (Global). <br>
+        • Relate the material to be taught with previous knowledge of the students and their personal experiences (Global). <br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Global).<br>
+      </p>
+    </ul>
+
+    {% elif item=="intuitive" and item=="verbal" and item=="global"%}
+    <h4>Reflective, Intuitive, Verbal, Global</h4>
+    <ul>
+      <p>
+        • Provide a balance of abstract concepts such as theories, mathematical models and principles with concrete concepts such as facts, reality and data with their results (Intuitive). 
+        • Provide materials that emphasize fundamental understanding (Intuitive). 
+        • Develop theories and formulate hypotheses (Intuitive). 
+        • Provide some open-ended questions and exercises that call for analysis and synthesis (Intuitive).
+        • Encourage creative solutions and motivate students that give incorrect answers (Intuitive).
+      </p>
+      <p>
+        • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+        • Use questions to introduce topics followings students’ answers (Verbal). <br>
+        • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal).<br> 
+        • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
+        • List all relevant information about assignments, work requirements, objectives and direction on paper or have the students copy from the board (Verbal). <br>
+        • Use a teacher-organized learning situation (Verbal). <br>
+        • Motivate learning through grades and competition (Verbal).<br> 
+        • Provide a balance of abstract concepts and concrete information (Verbal).<br>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+      </p>
+      <p>
+        • Use demonstration strategy for teaching (Sequential/Global). <br>
+        • Teach from general to specific (Global). <br>
+        • Students should be exposed periodically to advanced concepts before these concepts would normally be introduced (Global). <br>
+        • Assign creativity exercises that involve generating alternative solutions and bringing in materials from other courses or disciplines (Global). <br>
+        • Give students the freedom to devise their own ways of solving problems (Global). <br>
+        • Relate the material to be taught with previous knowledge of the students and their personal experiences (Global). <br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Global).<br>
+      </p>
+    </ul>
+
+    {% elif item =="active" and item=="sensing" %}
+    <h4>Active, Sensing</h4>
+    <ul>
+      <p>
+        • Emphasize practical problem-solving strategies such as laboratory strategy and project (Active). <br>
+        • Provide hands-on activities (Active). <br>
+        • Use computer assisted instruction (Active).<br>
+        • Discovery through group learning, brainstorming and case study (Active). <br>
+        • Seek practical exercises that involve drilling and the development of psychomotor skills (Active).<br> 
+        • Allow students to interact with each other and allow them to cooperate on homework assignments. (Active). <br>
+        • Use guided discovery, demonstration & conventional (expository) strategies for teaching (A\R).<br>
+      </p>
+      <p>
+        • Use computer assisted instruction (Sensing).<br>
+        • Provide practical exercises that involve drilling and the development of psychomotor skills (Sensing). <br>
+        • Show films through video tape or projector during instruction (Sensing). <br>
+        • Use different demonstrations activities for illustrations (Sensing). <br>
+        • Use simple sketches, graphs, diagrams and pictures before, during and after the presentation of verbal materials (Sensing). <br>
+        • Use practical applications of the concept taught and its relevance to real life situations (Sensing). <br>
+        • Provide concrete examples during illustrations such as facts, reality or hypothetical experiments and their results and follow the scientific procedure in presenting theoretical materials (Sensing). <br>
+        • Provide explicit illustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
+        • Emphasize practical problem-solving strategies such as guided discovery and inquiry (Sensing). <br>
+      </p>
+    </ul>
+    
+    {% elif item =="active" and item=="visual" %}
+    <h4>Active, Visual</h4>
+    <ul>
+      <p>
+        • Emphasize practical problem-solving strategies such as laboratory strategy and project (Active). <br>
+        • Provide hands-on activities (Active). <br>
+        • Use computer assisted instruction (Active).<br>
+        • Discovery through group learning, brainstorming and case study (Active). <br>
+        • Seek practical exercises that involve drilling and the development of psychomotor skills (Active). <br>
+        • Allow students to interact with each other and allow them to cooperate on homework assignments. (Active). <br>
+        • Use guided discovery, demonstration & conventional (expository) strategies for teaching (A\R).<br>
+      </p>
+      <p>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+        • Use video tape for instruction (Visual). <br>
+        • Use computer assisted instruction (Visual). <br>
+        • Use concept maps for illustration (Visual). <br>
+        • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual). <br>
+      </p>
+    </ul>
+    
+    {% elif item =="active" and item=="sequential" %}
+    <h4>Active, Sequential</h4>
+    <ul>
+      <p>
+        • Emphasize practical problem-solving strategies such as laboratory strategy and project (Active). <br>
+        • Provide hands-on activities (Active). <br>
+        • Use computer assisted instruction (Active).<br>
+        • Discovery through group learning, brainstorming and case study (Active). <br>
+        • Seek practical exercises that involve drilling and the development of psychomotor skills (Active). <br>
+        • Allow students to interact with each other and allow them to cooperate on homework assignments.(Active). <br>
+        • Use guided discovery, demonstration & conventional (expository) strategies for teaching (A\R).<br>
+      </p>
+      <p>
+        • Develop theories and formulate hypotheses (Sequential). <br>
+        • Follow laid down principles and scientific procedures in presenting theoretical materials (Sequential). <br>
+        • Show how the theory or hypothesis can be validated, deduce its consequences and present applications (Sequential). <br>
+        • Use demonstration strategy for teaching (Sequential/Global). <br>
+        • Provide practical exercises that involve drilling in a logical and sequential order (Sequential).  <br>
+      </p>
+    </ul>
+
+    {% elif item=="visual" and item=="sequential" %}
+    <h4>Visual, Sequential</h4>
+    <ul>
+      <p>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+        • Use video tape for instruction (Visual). <br>
+        • Use computer assisted instruction (Visual). <br>
+        • Use concept maps for illustration (Visual). <br>
+        • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual).<br>
+      </p>
+      <p>
+        • Develop theories and formulate hypotheses (Sequential). <br>
+        • Follow laid down principles and scientific procedures in presenting theoretical materials (Sequential).<br> 
+        • Show how the theory or hypothesis can be validated, deduce its consequences and present applications (Sequential). <br>
+        • Use demonstration strategy for teaching (Sequential/Global). <br>
+        • Provide practical exercises that involve drilling in a logical and sequential order (Sequential). <br> 
+      </p>
+    </ul>
+
+    {% elif item=="sensing" and item=="visual" %}
+    <h4>Sensing, Visual</h4>
+    <ul>
+      <p>
+        • Use computer assisted instruction (Sensing).<br>
+        • Provide practical exercises that involve drilling and the development of psychomotor skills (Sensing). <br>
+        • Show films through video tape or projector during instruction (Sensing). <br> 
+        • Use different demonstrations activities for illustrations (Sensing). <br>
+        • Use simple sketches, graphs, diagrams and pictures before, during and after the presentation of verbal materials (Sensing). <br>
+        • Use practical applications of the concept taught and its relevance to real life situations (Sensing).<br> 
+        • Provide concrete examples during illustrations such as facts, reality or hypothetical experiments and their results and follow the scientific procedure in presenting theoretical materials (Sensing). <br>
+        • Provide explicit illustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
+        • Emphasize practical problem-solving strategies such as guided discovery and inquiry (Sensing). <br>
+      </p>
+      <p>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+        • Use video tape for instruction (Visual). <br>
+        • Use computer assisted instruction (Visual). <br>
+        • Use concept maps for illustration (Visual). <br>
+        • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual).<br>
+      </p>
+    </ul>
+
+    {% elif item=="sensing" and item=="sequential"%}
+    <h4>Sensing, Sequential</h4>
+    <ul>
+      <p>
+        • Use computer assisted instruction (Sensing).<br>
+        • Provide practical exercises that involve drilling and the development of psychomotor skills (Sensing). <br>
+        • Show films through video tape or projector during instruction (Sensing). <br>
+        • Use different demonstrations activities for illustrations (Sensing). <br>
+        • Use simple sketches, graphs, diagrams and pictures before, during and after the presentation of verbal materials (Sensing). <br>
+        • Use practical applications of the concept taught and its relevance to real life situations (Sensing).<br> 
+        • Provide concrete examples during illustrations such as facts, reality or hypothetical experiments and their results and follow the scientific procedure in presenting theoretical materials (Sensing). <br>
+        • Provide explicit illustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
+        • Emphasize practical problem-solving strategies such as guided discovery and inquiry (Sensing). <br>
+      </p>
+      <p>
+        • Develop theories and formulate hypotheses (Sequential). <br>
+        • Follow laid down principles and scientific procedures in presenting theoretical materials (Sequential).<br> 
+        • Show how the theory or hypothesis can be validated, deduce its consequences and present applications (Sequential). <br>
+        • Use demonstration strategy for teaching (Sequential/Global). <br>
+        • Provide practical exercises that involve drilling in a logical and sequential order (Sequential).  <br>
+      </p>
+    </ul>
+    
+    {% elif item =="reflective" and item=="intuitive" %}
+    <h4>Reflective, Intuitive</h4>
+    <ul>
+      <p>
+        • Provide materials that emphasize fundamental understanding (Reflective). <br>
+        • Provide intervals of time for students to think about what they have been taught before starting teaching another concept (Reflective). <br>
+        • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective). <br>
+        • Provide little practical exercises that involve drilling and the development of the three educational domains (Reflective). <br>
+        • Use guided discovery, demonstration and conventional (expository) strategies for teaching (Active/Reflective).<br>
+      </p>
+      <p>
+        • Provide a balance of abstract concepts such as theories, mathematical models and principles with concrete concepts such as facts, reality and data with their results (Intuitive). <br>
+        • Provide materials that emphasize fundamental understanding (Intuitive). <br>
+        • Develop theories and formulate hypotheses (Intuitive). <br>
+        • Provide some open-ended questions and exercises that call for analysis and synthesis (Intuitive).<br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Intuitive).<br>
+      </p>
+    </ul>
+
+    {% elif item =="reflective" and item=="verbal" %}
+    <h4>Reflective, Verbal</h4>
+    <ul>
+      <p>
+        • Provide materials that emphasize fundamental understanding (Reflective). <br>
+        • Provide intervals of time for students to think about what they have been taught before starting teaching another concept (Reflective). <br>
+        • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective).<br> 
+        • Provide little practical exercises that involve drilling and the development of the three educational domains (Reflective). <br>
+        • Use guided discovery, demonstration and conventional (expository) strategies for teaching (Active/Reflective).<br>
+      </p>
+      <p>
+        • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+        • Use questions to introduce topics followings students’ answers (Verbal). <br>
+        • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal). <br>
+        • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
+        • List all relevant information about assignments, work requirements, objectives and direction on paper or have the students copy from the board (Verbal). <br>
+        • Use a teacher-organized learning situation (Verbal). <br>
+        • Motivate learning through grades and competition (Verbal).<br> 
+        • Provide a balance of abstract concepts and concrete information (Verbal).<br>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual). <br><br>
+      </p>
+    </ul>
+
+    {% elif item =="reflective" and item=="global" %}
+    <h4>Reflective, Global</h4>
+    <ul>
+      <p>
+        • Provide materials that emphasize fundamental understanding (Reflective). <br>
+        • Provide intervals of time for students to think about what they have been taught before starting teaching another concept (Reflective). <br>
+        • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective). <br>
+        • Provide little practical exercises that involve drilling and the development of the three education<br>al domains (Reflective). <br>
+        • Use guided discovery, demonstration and conventional (expository) strategies for teaching (Active/Reflective).<br>
+      </p>
+      <p>
+        • Teach from general to specific (Global). <br>
+        • Students should be exposed periodically to advanced concepts before these concepts would normally be introduced (Global). <br>
+        • Assign creativity exercises that involve generating alternative solutions and bringing in materials from other courses or disciplines (Global). <br>
+        • Give students the freedom to devise their own ways of solving problems (Global).<br> 
+        • Relate the material to be taught with previous knowledge of the students and their personal experiences (Global). <br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Global).<br>
+      </p>
+    </ul>
+
+    {% elif item=="intuitive" and item=="verbal" %}
+    <h4>Intuitive, Verbal</h4>
+    <ul>
+      <p>
+        • Provide a balance of abstract concepts such as theories, mathematical models and principles with concrete concepts such as facts, reality and data with their results (Intuitive). <br>
+        • Provide materials that emphasize fundamental understanding (Intuitive). <br>
+        • Develop theories and formulate hypotheses (Intuitive). <br>
+        • Provide some open-ended questions and exercises that call for analysis and synthesis (Intuitive).<br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Intuitive).<br>
+      </p>
+      <p>
+        • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+        • Use questions to introduce topics followings students’ answers (Verbal). <br>
+        • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal). <br>
+        • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
+        • List all relevant information about assignments, work requirements, objectives and direction on paper or have the students copy from the board (Verbal). <br>
+        • Use a teacher-organized learning situation (Verbal). <br>
+        • Motivate learning through grades and competition (Verbal). <br>
+        • Provide a balance of abstract concepts and concrete information (Verbal).<br>
+        • Use of conventional teaching (expository) strategy (Verbal/Visual).<br>
+      </p>
+    </ul>
+
+    {% elif item=="intuitive" and item=="global" %}
+    <h4>Intuitive, Global</h4>
+    <ul>
+      <p>
+        • Provide a balance of abstract concepts such as theories, mathematical models and principles with concrete concepts such as facts, reality and data with their results (Intuitive). <br>
+        • Provide materials that emphasize fundamental understanding (Intuitive). <br>
+        • Develop theories and formulate hypotheses (Intuitive). <br>
+        • Provide some open-ended questions and exercises that call for analysis and synthesis (Intuitive).<br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Intuitive).<br>
+      </p>
+      <p>
+        • Teach from general to specific (Global). <br>
+        • Students should be exposed periodically to advanced concepts before these concepts would normally be introduced (Global). <br>
+        • Assign creativity exercises that involve generating alternative solutions and bringing in materials from other courses or disciplines (Global). <br>
+        • Give students the freedom to devise their own ways of solving problems (Global). <br>
+        • Relate the material to be taught with previous knowledge of the students and their personal experiences (Global). <br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Global).<br>
+      </p>
+    </ul>
+
+    {% elif item=="verbal" and item=="global" %}
+    <h4>Verbal, Global</h4>
+    <ul>
+      <p>
+         • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+         • Use questions to introduce topics followings students’ answers (Verbal). <br>
+         • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal). <br>
+         • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
+         • List all relevant information about assignments, work requirements, objectives and direction on paper or have the students copy from the board (Verbal). <br>
+         • Use a teacher-organized learning situation (Verbal). <br>
+         • Motivate learning through grades and competition (Verbal). <br>
+         • Provide a balance of abstract concepts and concrete information (Verbal).<br>
+         • Use of conventional teaching (expository) strategy (Verbal/Visual).<br>
+      </p>
+      <p>
+        • Teach from general to specific (Global). <br>
+        • Students should be exposed periodically to advanced concepts before these concepts would normally be introduced (Global). <br>
+        • Assign creativity exercises that involve generating alternative solutions and bringing in materials from other courses or disciplines (Global). <br>
+        • Give students the freedom to devise their own ways of solving problems (Global). <br>
+        • Relate the material to be taught with previous knowledge of the students and their personal experiences (Global). <br>
+        • Encourage creative solutions and motivate students that give incorrect answers (Global).<br>
+      </p>
+    </ul>
+
+    {% elif item == "reflective" %}
+    <h4>Reflective</h4>
+    <ul>
+      <p>
+          • Provide materials that emphasize fundamental understanding (Reflective). <br>
+          • Provide intervals of time for students to think about what they have been taught before starting teaching another concept (Reflective). <br>
+          • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective). <br>
+          • Provide little practical exercises that involve drilling and the development of the three educational domains (Reflective). <br>
+          • Use guided discovery, demonstration and conventional (expository) strategies for teaching (Active/Reflective).<br>
+        </p>
+    </ul>
+
+    {% elif item == "active" %}
+    <h4>Active</h4>
+    <ul>
+        <p>
+         • Emphasize practical problem-solving strategies such as laboratory strategy and project (Active). <br>
+          • Provide hands-on activities (Active). <br>
+          • Use computer assisted instruction (Active). <br>
+          • Discovery through group learning, brainstorming and case study (Active). <br>
+          • Seek practical exercises that involve drilling and the development of psychomotor skills (Active). <br>
+          • Allow students to interact with each other and allow them to cooperate on homework assignments.(Active). <br>
+          • Use guided discovery, demonstration & conventional (expository) strategies for teaching (A\R).<br>
+        </p>
+    </ul>
+
+    {% elif item == "sensing" %}
+    <h4>Sensing</h4>
+    <ul>
+        <p>
+          • Use computer assisted instruction (Sensing).<br>
+          • Provide practical exercises that involve drilling and the development of psychomotor skills (Sensing). <br>
+          • Show films through video tape or projector during instruction (Sensing). <br>
+          • Use different demonstrations activities for illustrations (Sensing). <br>
+          • Use simple sketches, graphs, diagrams and pictures before, during and after the presentation of verbal materials (Sensing). <br>
+          • Use practical applications of the concept taught and its relevance to real life situations (Sensing). <br>
+          • Provide concrete examples during illustrations such as facts, reality or hypothetical experiments and their results and follow the scientific procedure in presenting theoretical materials (Sensing). <br>
+          • Provide explicit illustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
+          • Emphasize practical problem-solving strategies such as guided discovery and inquiry (Sensing).<br>
+        </p>
+    </ul>
+
+    {% elif item == "intuitive" %}
+    <h4>Intuitive</h4>
+    <ul>
+        <p>
+         • Provide a balance of abstract concepts such as theories, mathematical models and principles with concrete concepts such as facts, reality and data with their results (Intuitive). <br>
+         • Provide materials that emphasize fundamental understanding (Intuitive). <br>
+         • Develop theories and formulate hypotheses (Intuitive). <br>
+         • Provide some open-ended questions and exercises that call for analysis and synthesis (Intuitive).<br>
+         • Encourage creative solutions and motivate students that give incorrect answers (Intuitive).<br>
+        </p>
+    </ul>
+
+    {% elif item == "visual" %}
+    <h4>Visual</h4>
+    <ul>
+        <p>
+         • Use of conventional teaching (expository) strategy (Verbal/Visual). <br>
+         • Use video tape for instruction (Visual). <br>
+         • Use computer assisted instruction (Visual). <br>
+         • Use concept maps for illustration (Visual). <br>
+         • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual).<br>
+        </p>
+    </ul>
+
+    {% elif item == "verbal" %}
+    <h4>Verbal</h4>
+    <ul>
+        <p>
+         • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+         • Use questions to introduce topics followings students’ answers (Verbal). <br>
+         • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal). <br>
+         • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
+         • List all relevant information about assignments, work requirements, objectives and direction on paper or have the students copy from the board (Verbal). <br>
+         • Use a teacher-organized learning situation (Verbal). <br>
+         • Motivate learning through grades and competition (Verbal).<br> 
+         • Provide a balance of abstract concepts and concrete information (Verbal).<br>
+         • Use of conventional teaching (expository) strategy (Verbal/Visual).<br>
+        </p>
+    </ul>
+
+     {% elif item == "sequential" %}
+    <h4>Sequential</h4>
+    <ul>
+        <p>
+         • Develop theories and formulate hypotheses (Sequential). <br>
+         • Follow laid down principles and scientific procedures in presenting theoretical materials (Sequential). <br>
+         • Show how the theory or hypothesis can be validated, deduce its consequences and present applications (Sequential). <br>
+         • Use demonstration strategy for teaching (Sequential/Global).<br> 
+         • Provide practical exercises that involve drilling in a logical and sequential order (Sequential). <br> 
+
+        </p>
+    </ul>   
+
+    {% elif item == "global" %}
+    <h4>Global</h4>
+    <ul>
+        <p>
+          • Teach from general to specific (Global). <br>
+          • Students should be exposed periodically to advanced concepts before these concepts would normally be introduced (Global). <br>
+          • Assign creativity exercises that involve generating alternative solutions and bringing in materials from other courses or disciplines (Global). <br>
+          • Give students the freedom to devise their own ways of solving problems (Global). <br>
+          • Relate the material to be taught with previous knowledge of the students and their personal experiences (Global). <br>
+          • Encourage creative solutions and motivate students that give incorrect answers (Global).<br>
+        </p>
+    </ul>
+
+    
+    {% endif %}
+    
+{% endfor %}
+
+    <!-- </td>
+  </tr>
+ </table> --> 
+        
+  
+
+{% endblock %}
+</div>

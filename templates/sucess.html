@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+  </head>
+    <style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+        background: #ecf0f4;
+      }
+        h1 {
+          color: #00bcd9;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 60px;
+          margin-bottom: 10px;
+        }
+        h2{
+          color : #00bcd9;
+          font-size: 25px;
+          font-family: 'Roboto', sans-serif;
+        }
+        h3 {
+          color: #00bcd9;
+          font-family: 'Roboto', sans-serif;
+          
+        }
+        h4{
+          color : #404F5E;
+          font-family: 'Roboto', sans-serif;
+        }
+        p {
+          color: #404F5E;
+          font-family: 'Roboto', sans-serif;
+          font-size:18px;
+          margin-left: 10px ;
+        }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 100%;
+      }
+      div.polaroid {
+        width: 90%;
+        margin-right: auto ;
+        margin-left: auto; 
+      }
+     
+    </style>
+    <body>
+      <h1> Result Summary</h1>
+      <br>
+      <table>
+        <tr>
+          <td>
+      <div class="card">
+        {% if prediction_text=='Extroversion' %}
+           <div class="polaroid"><img src="{{url_for('static', filename='c0.png')}}/"></div>
+        {% elif prediction_text=='Neuroticism' %}
+           <div class="polaroid"><img src="{{url_for('static', filename='c1.png')}}"/></div>
+        {% elif prediction_text=='Agreeableness' %}
+           <div class="polaroid"><img src="{{url_for('static', filename='c2.png')}}"/></div>
+        {% elif prediction_text=='Conscientiousness' %}
+           <div class="polaroid"><img src="{{url_for('static', filename='c3.png')}}"/></div>
+        {% elif prediction_text=='Openness' %}
+           <div class="polaroid"><img src="{{url_for('static', filename='c4.png')}}"/></div>{% endif %}
+      </div> 
+      </td>    
+      <!-- <div style="border-radius:200px; height:200px; width:200px; background: #00bcd9; margin:0 auto;">
+        <svg viewBox="0 0 76 76" class="success-message__icon icon-checkmark">
+            <circle cx="38" cy="38" r="36"/>
+            <path fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M17.7,40.9l10.9,10.9l28.7-28.7"/>
+        </svg>
+      </div> -->
+      <td>
+      <div class="card">
+        <!-- <h1>You are a person high in : {{ prediction_text }}</h1>  -->
+        <h2>Trait Description</h2>
+        <!-- <p>Your response has been recorded</p> -->
+        <!-- <h3>You are a person high in : {{ prediction_text }}</h3> -->
+            <h4>Neuroticism</h4> 
+             <p>Individuals who are high in neuroticism tend to experience mood swings, anxiety, irritability, and sadness.</p>
+            <h4>Extraversion</h4> 
+            <p>A person high in extraversion are outgoing and tend to gain energy in social situations.</p>
+            <h4>Agreeableness</h4>
+            <p>People who are high in agreeableness tend to be more cooperative while those low in this personality trait tend to be more competitive and sometimes even manipulative.</p>
+            <h4>Conscientiousness</h4>
+            <p>Highly conscientious people tend to be organized and mindful of details. They plan ahead and are mindful of deadlines.</p>
+            <h4>Openness</h4>
+            <p>People who are high in openness tend to have a broad range of interests. They are curious about the world and are eager to learn new things and enjoy new experiences.</p>           
+        
+    </td>
+  </tr>
+ </table> 
+        
+        <p style="color: black; font-style: italic;">To know your learning style : <a href="{{ url_for('ils') }}">Click here!!!</a>.</p>
+      </div>
+    </body>
+</html>
