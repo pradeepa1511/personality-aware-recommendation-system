@@ -35,8 +35,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        height: 100%;
+        width: auto;
+        height: 70%;
       }
       div.polaroid {
         width: 90%;
@@ -52,10 +52,12 @@
     </div>
      <div class="card">
     <!-- <h1>RECOMMENDATION</h1> -->
+    <h4>Learning strategies for enhanced studying experience : </h4>
+    <br>
     {% for item in final_lis %}
 
     {% if item =="active" and item=="sensing" and item=="visual" and item=="sequential"%}
-    <h4>Active, Sensing, Visual, Sequential</h4>
+    <h3>Active, Sensing, Visual, Sequential</h3>
     <ul>
       <p>
         • Emphasize practical problem-solving strategies such as laboratory strategy and project (Active). <br>
@@ -96,7 +98,7 @@
     {% elif item =="reflective" and item=="intuitive" and item=="verbal" and item=="global"%}
     <h4>Reflective, Intuitive, Verbal, Global</h4>
     <ul>
-      <p>
+      <p> 
         • Provide materials that emphasize fundamental understanding (Reflective). <br>
         • Provide intervals of time for students to think about what they have been taught before starting teaching another concept (Reflective). <br>
         • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective). <br>
@@ -586,6 +588,7 @@
           • Provide some open-ended questions and exercise that call for analysis and synthesis (Reflective). <br>
           • Provide little practical exercises that involve drilling and the development of the three educational domains (Reflective). <br>
           • Use guided discovery, demonstration and conventional (expository) strategies for teaching (Active/Reflective).<br>
+          • You can also make use of the suggested e-learning platforms : <a href='https://www.onenote.com/' target="_blank">OneNote</a>, <a href='https://quizlet.com/' target="_blank">Quizlet</a>, <a href='https://readable.com/' target="_blank">Readable</a>  
         </p>
     </ul>
 
@@ -600,6 +603,7 @@
           • Seek practical exercises that involve drilling and the development of psychomotor skills (Active). <br>
           • Allow students to interact with each other and allow them to cooperate on homework assignments.(Active). <br>
           • Use guided discovery, demonstration & conventional (expository) strategies for teaching (A\R).<br>
+          • You can also make use of the suggested e-learning platforms : <a href='https://www.linkedin.com/learning/' target="_blank">LinkedIn Learning</a>, <a href='https://www.udacity.com/' target="_blank">Udacity</a>, <a href='https://www.coursera.co' target="_blank">Coursera</a>
         </p>
     </ul>
 
@@ -614,8 +618,10 @@
           • Use simple sketches, graphs, diagrams and pictures before, during and after the presentation of verbal materials (Sensing). <br>
           • Use practical applications of the concept taught and its relevance to real life situations (Sensing). <br>
           • Provide concrete examples during illustrations such as facts, reality or hypothetical experiments and their results and follow the scientific procedure in presenting theoretical materials (Sensing). <br>
-          • Provide explicit illustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
+          • Provide explicit ilpunlustrations of sensing patterns through empirical illustration and observation of surroundings (Sensing). <br>
           • Emphasize practical problem-solving strategies such as guided discovery and inquiry (Sensing).<br>
+          • You can also make use of the suggested e-learning platforms : <a href='https://www.memrise.com/' target="_blank">Memrise</a>, <a href='https://www.studyblue.com/online-flashcards' target="_blank">StudyBlue</a>, <a href='https://mnemonicdictionary.com/' target="_blank">MnemonicDictionary.com</a>
+        </p>
         </p>
     </ul>
 
@@ -628,6 +634,7 @@
          • Develop theories and formulate hypotheses (Intuitive). <br>
          • Provide some open-ended questions and exercises that call for analysis and synthesis (Intuitive).<br>
          • Encourage creative solutions and motivate students that give incorrect answers (Intuitive).<br>
+         • You can also make use of the suggested e-learning platforms : <a href='https://www.memrise.com/' target="_blank">Memrise</a>, <a href='https://www.studyblue.com/online-flashcards' target="_blank">StudyBlue</a>, <a href='https://mnemonicdictionary.com/' target="_blank">MnemonicDictionary.com</a>
         </p>
     </ul>
 
@@ -640,6 +647,7 @@
          • Use computer assisted instruction (Visual). <br>
          • Use concept maps for illustration (Visual). <br>
          • Use pictures, simple sketches, graphs and schematics before, during and after presentation of verbal materials(Visual).<br>
+         • You can also make use of the suggested e-learning platforms : <a href='https://www.edx.org/' target="_blank">edX</a>, <a href='https://www.creately.com/' target="_blank">Creately</a>, <a href='https://www.coursera.co' target="_blank">Coursera</a>
         </p>
     </ul>
 
@@ -647,7 +655,7 @@
     <h4>Verbal</h4>
     <ul>
         <p>
-         • Start the lesson with a story, an anecdote or humor that relates to the content or to the students own experiences (Verbal). <br>
+         • Start the lesson with a story, a humor that relates to the content or to the students own experiences (Verbal). <br>
          • Use questions to introduce topics followings students’ answers (Verbal). <br>
          • Proceed step by step through details that need to be absorbed in order to acquire skills (Verbal). <br>
          • Provide instant feedback on tests and assignments as soon as possible (Verbal). <br>
@@ -656,18 +664,21 @@
          • Motivate learning through grades and competition (Verbal).<br> 
          • Provide a balance of abstract concepts and concrete information (Verbal).<br>
          • Use of conventional teaching (expository) strategy (Verbal/Visual).<br>
+         • You can also make use of the suggested e-learning platforms : <a href='https://www.duolingo.com/' target="_blank">Duolingo</a>, <a href='https://ed.ted.com/' target="_blank">TED-Ed</a>, <a href='https://www.coursera.co' target="_blank">Coursera</a>
         </p>
     </ul>
 
      {% elif item == "sequential" %}
-    <h4>Sequential</h4>
+    <h3>Sequential</h3>
+    <br>
     <ul>
         <p>
          • Develop theories and formulate hypotheses (Sequential). <br>
          • Follow laid down principles and scientific procedures in presenting theoretical materials (Sequential). <br>
          • Show how the theory or hypothesis can be validated, deduce its consequences and present applications (Sequential). <br>
          • Use demonstration strategy for teaching (Sequential/Global).<br> 
-         • Provide practical exercises that involve drilling in a logical and sequential order (Sequential). <br> 
+         • Provide practical exercises that involve drilling in a logical and sequential order (Sequential). <br>
+         • You can also make use of the suggested e-learning platforms : <a href='https://coggle.it/' target="_blank">Coggle</a>, <a href='https://www.edrawmax.com/' target="_blank">Edraw</a>, <a href='https://www.skillshare.com/en/' target="_blank">Skillshare</a> 
 
         </p>
     </ul>   
@@ -682,6 +693,8 @@
           • Give students the freedom to devise their own ways of solving problems (Global). <br>
           • Relate the material to be taught with previous knowledge of the students and their personal experiences (Global). <br>
           • Encourage creative solutions and motivate students that give incorrect answers (Global).<br>
+          • You can also make use of the suggested e-learning platforms : <a href='https://www.edx.org/' target="_blank">edX</a>, <a href='https://www.udacity.com/' target="_blank">Udacity</a>
+
         </p>
     </ul>
 
@@ -706,17 +719,17 @@
     var div = document.getElementsByClassName('chart')[0];
     console.log("funllll")
     if (pred === "Extroversion") {
-      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c0.png")}}"/></div>';
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c00.png")}}"/></div><p>You Belong to a cluster where your score is higher on both Agreeableness & Conscientiousness. Here are some possible characteristics of someone who has a high score on both agreeableness & conscientiousness:<br>• Cooperative and responsible: Individuals with high agreeableness and conscientiousness tend to be cooperative and responsible. They may work well in teams and may take their responsibilities seriously.<br>• Empathetic and considerate: Individuals with high agreeableness tend to be empathetic and considerate of others. They may be more attuned to the needs and feelings of others, and may be more likely to offer emotional support and show compassion.<br>• Organized and dependable: Individuals with high conscientiousness tend to be organized and dependable. They may be diligent in their work and may have a strong work ethic.<br>• People-pleasers: Individuals with high agreeableness may sometimes struggle with asserting their own needs and boundaries. They may be more likely to put the needs and feelings of others ahead of their own, and may find it difficult to say "no."<br>• Detail-oriented: Individuals with high conscientiousness tend to be detail-oriented and focused on accuracy. They may be thorough in their work and may strive for excellence.<br>• Conflict-averse: Individuals with high agreeableness tend to prioritize social harmony and may avoid conflict. They may be more likely to seek out compromise and may find it difficult to confront others or assert their own needs.</p>';
     } else if (pred === "Neuroticism") {
-      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c1.png")}}"/></div>';
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c01.png")}}"/></div><p>You Belong to a cluster where your score is higher on Conscientiousness. So, you tend to be organized, responsible, and reliable. Here are some possible characteristics of someone who has a high score on conscientiousness:<br>• Detail-oriented: Individuals with high conscientiousness tend to pay attention to details and be thorough in their work. They may be less likely to make mistakes or overlook important information.<br>• Goal-driven: Individuals with high conscientiousness tend to be motivated to achieve their goals and follow through on their commitments. They may set high standards for themselves and work hard to meet them.<br>• Reliable: Individuals with high conscientiousness tend to be dependable and trustworthy. They may be more likely to follow through on their promises and obligations, and others may rely on them to get things done.<br>• Organized: Individuals with high conscientiousness tend to be good at planning and organizing their time and resources. They may be less likely to procrastinate or waste time.<br>• Responsible: Individuals with high conscientiousness tend to take responsibility for their actions and their impact on others. They may be more likely to take ownership of their mistakes and work to make things right.</p>';
     } else if (pred === "Agreeableness") { 
-      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c2.png")}}"/></div>';
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c02.png")}}"/></div><p>You Belong to a cluster where your score is higher on both Extroversion& Openness. Here are some possible characteristics of someone who has a high score on both extroversion & openness:<br><br>• Outgoing and adventurous: Individuals with high extroversion tend to be outgoing, sociable, and assertive. They may enjoy meeting new people and trying new experiences.<br>• Imaginative and creative: Individuals with high openness to experience tend to be imaginative, curious, and creative. They may enjoy exploring new ideas and perspectives and may be interested in artistic or intellectual pursuits.<br>• Stimulus-seeking: Individuals with high extroversion and openness to experience may seek out novelty and excitement. They may enjoy taking risks and may be more likely to engage in adventurous or unconventional activities.<br>• Socially engaged: Individuals with high extroversion tend to enjoy social interaction and may be more likely to seek out social support and feedback. They may also be more likely to be involved in social or community activities.<br>• Tolerance for ambiguity: Individuals with high openness to experience may be more comfortable with ambiguity and uncertainty. They may be more willing to tolerate ambiguity and explore new ideas and perspectives, even if they are unfamiliar or unconventional.<br>• Expressive and communicative: Individuals with high extroversion may be more expressive and communicative and may enjoy expressing their ideas and opinions to others. They may also enjoy public speaking or other forms of performance.</p>';
       
       console.log("helloooo")
     } else if (pred === "Conscientiousness") {
-      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c3.png")}}"/></div>';
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c03.png")}}"/></div><p>You Belong to a cluster where your score is higher on both conscientiousness and openness. So, you tend to be diligent, curious, and creative. Here are some possible characteristics of someone who has high scores on both conscientiousness and openness:<br>• Organized and detail-oriented: Individuals with high conscientiousness tend to be organized, responsible, and detail-oriented. They may be diligent in their work and have a strong work ethic.<br>• Goal-driven and ambitious: Individuals with high conscientiousness may have a clear sense of direction and purpose. They may be motivated to achieve their goals and may prioritize their work over leisure activities.<br>• Imaginative and creative: Individuals with high openness to experience tend to be imaginative, curious, and creative. They may enjoy exploring new ideas and perspectives and may be interested in artistic or intellectual pursuits.<br>• Open-minded and curious: Individuals with high openness to experience tend to have an open mind and may be interested in exploring different ideas and perspectives. They may be willing to challenge conventional thinking and may be more likely to embrace diversity.<br>• Responsible risk-takers: Individuals with high conscientiousness and openness to experience may be willing to take calculated risks. They may be willing to step outside their comfort zone to pursue new opportunities but will likely weigh the potential risks and benefits before making a decision.<br>• Perfectionistic tendencies: Individuals with high conscientiousness may sometimes exhibit perfectionistic tendencies. They may be highly critical of their own work and may strive for excellence, sometimes at the expense of their well-being.<br></p>';
     } else {
-      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c4.png")}}"/></div>';
+      div.innerHTML+='<div class="polaroid"><img src="{{url_for("static", filename="c04.png")}}"/></div><p>You Belong to a cluster where your score is higher on Extroversion and Equal score on Conscientiousness & Openness. So, here are some possible characteristics you tend to be:<br>• Sociable and outgoing: With high extroversion, this person may enjoy being around others and may feel energized by social interactions.<br>• Organized and responsible: With equal scores on conscientiousness, this person may be reliable, dependable, and goal oriented. They may be good at managing their time and resources and may take their commitments seriously.<br>• Creative and open-minded: With equal scores on openness, this person may have a rich and active imagination and may be open to new ideas and experiences. They may enjoy exploring their own creativity and self-expression.<br>• Assertive and confident: With high extroversion, this person may be more assertive and confident in their interactions with others. They may be more likely to speak up for themselves and their opinions.<br>• Adaptable: With equal scores on conscientiousness and openness, this person may be able to adapt to new situations and challenges. They may be able to balance their need for structure and routine with their openness to new experiences and ideas.<br></p>';
     }
   }
   

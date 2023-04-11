@@ -7,6 +7,7 @@
         text-align: center;
         padding: 40px 0;
         background: #ecf0f4;
+/*        background: white;*/
       }
         h1 {
           color: #00bcd9;
@@ -35,37 +36,48 @@
           font-size:18px;
           margin-left: 10px ;
         }
+        .card {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+        zoom: 75%;
+      }
       img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        height: 100%;
+        /*width: 90%;
+        height: 100%;*/
+        width: auto;
+        height: 70%;
       }
       div.polaroid {
-        width: 90%;
+        width: 100%;
         margin-right: auto ;
         margin-left: auto; 
       }
      
     </style>
     <body>
-      <h1> Result Summary</h1>
-      <br>
+      <h1> Your Personality Trait Cluster</h1>
+      <p>This Big Five assessment measures your scores on five major dimensions of personality: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (OCEAN). In this free report, you'll see a description of each of these five factors of personality, as well as a graph of your score on that measure.</p>
       <table>
         <tr>
           <td>
-      <div class="card">
+            <div class="card">
         {% if prediction_text=='Extroversion' %}
-           <div class="polaroid"><img src="{{url_for('static', filename='c0.png')}}/"></div>
+           <div class="polaroid"><img src="{{url_for('static', filename='c00.png')}}/"></div>
         {% elif prediction_text=='Neuroticism' %}
-           <div class="polaroid"><img src="{{url_for('static', filename='c1.png')}}"/></div>
+           <div class="polaroid"><img src="{{url_for('static', filename='c01.png')}}"/></div>
         {% elif prediction_text=='Agreeableness' %}
-           <div class="polaroid"><img src="{{url_for('static', filename='c2.png')}}"/></div>
+           <div class="polaroid"><img src="{{url_for('static', filename='c02.png')}}"/></div>
         {% elif prediction_text=='Conscientiousness' %}
-           <div class="polaroid"><img src="{{url_for('static', filename='c3.png')}}"/></div>
+           <div class="polaroid"><img src="{{url_for('static', filename='c03.png')}}"/></div>
         {% elif prediction_text=='Openness' %}
-           <div class="polaroid"><img src="{{url_for('static', filename='c4.png')}}"/></div>{% endif %}
+           <div class="polaroid"><img src="{{url_for('static', filename='c04.png')}}"/></div>{% endif %}
       </div> 
       </td>    
       <!-- <div style="border-radius:200px; height:200px; width:200px; background: #00bcd9; margin:0 auto;">
@@ -80,21 +92,21 @@
         <h2>Trait Description</h2>
         <!-- <p>Your response has been recorded</p> -->
         <!-- <h3>You are a person high in : {{ prediction_text }}</h3> -->
-            <h4>Neuroticism</h4> 
-             <p>Individuals who are high in neuroticism tend to experience mood swings, anxiety, irritability, and sadness.</p>
+            <h4>Openness</h4> 
+             <p>Openness describes a person’s tendency to think in abstract, complex ways. High scorers tend to be creative, adventurous, and intellectual. They enjoy playing with ideas and discovering novel experiences. Low scorers tend to be practical, conventional, and focused on the concrete. They tend to avoid the unknown and follow traditional ways.</p>
+             <h4>Conscientiousness</h4>
+            <p>Conscientiousness describes a person’s ability to exercise self-discipline and control in order to pursue their goals. High scorers are organized and determined and are able to forego immediate gratification for the sake of long-term achievement. Low scorers are impulsive and easily side-tracked.</p>
             <h4>Extraversion</h4> 
-            <p>A person high in extraversion are outgoing and tend to gain energy in social situations.</p>
+            <p>Extraversion describes a person’s inclination to seek stimulation from the outside world, especially in the form of attention from other people. Extraverts engage actively with others to earn friendship, admiration, power, status, excitement, and romance. Introverts, on the other hand, conserve their energy, and do not work as hard to earn these social rewards.</p>
             <h4>Agreeableness</h4>
-            <p>People who are high in agreeableness tend to be more cooperative while those low in this personality trait tend to be more competitive and sometimes even manipulative.</p>
-            <h4>Conscientiousness</h4>
-            <p>Highly conscientious people tend to be organized and mindful of details. They plan ahead and are mindful of deadlines.</p>
-            <h4>Openness</h4>
-            <p>People who are high in openness tend to have a broad range of interests. They are curious about the world and are eager to learn new things and enjoy new experiences.</p>           
+            <p>Agreeableness describes a person’s tendency to put others’ needs ahead of their own, and to cooperate rather than compete with others. People who are high in Agreeableness experience a great deal of empathy and tend to get pleasure out of serving and taking care of others. They are usually trusting and forgiving. People who are low in Agreeableness tend to experience less empathy and put their own concerns ahead of others.</p>
+            <h4>Neuroticism</h4>
+            <p>Neuroticism describes a person’s tendency to experience negative emotions, including fear, sadness, anxiety, guilt, and shame. While everyone experiences these emotions from time to time, some people are more prone to them than others. High Neuroticism scorers are more likely to react to a situation with fear, anger, sadness, and the like. Low Neuroticism scorers are more likely to brush off their misfortune and move on.</p>           
         
     </td>
   </tr>
- </table> 
-        
+  </div>
+ </table>        
         <p style="color: black; font-style: italic;">To know your learning style : <a href="{{ url_for('ils') }}">Click here!!!</a>.</p>
       </div>
     </body>
